@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>TEMPO DA CRIANÇA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-image: url(imagens/Fundo.jpg);
+    width: 10;
+    height: 80;
+    display: flex;
+    align-items: center;
+    justify-content: center 
+  }
+  .container-fluid {
+    
+    padding: 90px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #007fc7; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #007fc7;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #007fc7 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #99ebff;
+    color: #00a3cc;
+  }
+  .navbar {
+    margin-bottom: 7;
+    background-color: #007fc7; 
+    z-index: 9999;
+    border: 0;
+    font-size: 17px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 6px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #007fc7 !important;
+
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .img{
+  width: 45em;
+  height: 25em;
+  }
+
+  .img1{
+  padding-left: 50em;
+  width: 45em;
+  height: 25em;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .col-sm-4 {
+
+      text-align: center;
+      margin: 50px ;
+    }
+    .btn-lg {
+      color: white;
+
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body  data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a>
+        <img src="imagens/urso.png" width="45" height="45" >
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">HOME</a></li>
+        <li><a href="#services">SERVIÇOS</a></li>
+        <li><a href="#portfolio">ESTRUTURA</a></li>
+        <li><a href="#pricing">INVESTIMENTO</a></li>
+        <li><a href="#contact">CONTATO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+    <div>
+      <img src="imagens/logo2.png" class="img">
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>QUEM SOMOS</h2>
+      <h4>O ESPAÇO TEMPO DA CRIANÇA TEM UMA LOCALIZAÇÃO PRIVILEGIADA.</h4>
+      <p>Situada em um dos bairros nobres da cidade, o MARCO, a localização da escola oferece maior segurança aos pais e alunos. 
+      O espaço tempo da criança, tem como objetivo respeitar a criança viver a infancia. Levando em consideração as especificidades do Ser Criança e seu modo peculiar de aprender</p>
+      <br>
+      <button class="btn btn-default btn-lg" >
+      <a href="#contact">Entrar em Contato</a>
+      </button>
+  </div>
+    <div class="col-sm-4">
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon" >
+        <img src="imagens/menino.png" width="400" height="400">
+      </span>
+    </div>
+      <div class="col-sm-8">
+      <h1>Nossos Valores</h1><br><br>
+      <p><strong>MISSÃO:</strong>
+       O ESPAÇO TEMPO DA CRIANÇA é uma Casa de Educação que tem como meta cuidar e educar crianças com prazer e seriedade. Para isso, damos uma direção intencional ao desenvolvimento de crianças de 1 a 5 anos, favorecendo o despertar de seu potencial a partir de ações educativas que possibilitem a formação de cidadãos críticos e responsáveis, cientes de seus deveres e direitos.
+      </p>
+      <br>
+      <p><strong>VISÃO:</strong>
+       Oferecer a seus alunos e colaboradores a possibilidade de se desenvolverem, tornando-se cidadãos éticos, capazes de contribuir para a evolução da comunidade a que pertencem. Isso porque se preocupa com uma sociedade mais justa e competente em seus afazeres.Baseia sua prática educacional na crença de que cada ser humano é capaz de construir seu próprio conhecimento segundo princípios básicos, como: respeito, solidariedade, comprometimento e busca pela felicidade. Como educadores, procuramos seguir os pensadores que nos ajudam a refletir sobre o dia a dia na escola
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVIÇOS</h2>
+  <h4>O QUE NÓS OFERECEMOS</h4>
+  <br>
+  <div class="row slideanim" >
+    
+    <div class="col-sm-4">
+      <span class="glyphicon">
+        <img src="imagens/brinquedoteca2.png" width="135" height="135">
+      </span>
+      <h4>Brinquedoteca</h4>
+      <p>O principal objetivo das brinquedotecas é possibilitar a evolução mental, psicológico, social e físico da criança por meio do lúdico.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon">
+       <img src="imagens/alfabetizacao.png" width="200" height="140"> 
+      </span>
+      <h4>Oficina de Alfabetização e Letramento</h4>
+      <p>
+        O letramento na educação infantil é muito importante pois estimula a participação ativa no processo educacional e contribui para a futura formação leitora da criança, além de auxiliá-la na alfabetização e visão do mundo.
+      </p>
+     </div>
+    </div>
+   <div class="row slideanim">
+    <div class="col-sm-4" >
+      <span class="glyphicon">
+        <img src="imagens/matematica2.png" width="250" height="180">
+      </span>
+      <h4>Oficina de Raciocínio Lógico-Matemático</h4>
+      <p>O primeiro contato com os números e o desenvolvimento de um raciocínio lógico desde os anos iniciais da educação infantil são táticas essenciais para estimular as competências intelectuais das crianças</p>
+    </div>
+    <div class="col-sm-4"><br>
+      <span class="glyphicon">
+        <img src="imagens/apoio.png" width="190" height="154">
+      </span><br>
+      <h4>Apoio Pedagógico do 1º ao 5º Ano</h4>
+      <p>O apoio pedagógico é uma excelente estratégia de orientação e de ensino que tem como objetivo maximizar o aproveitamento do aluno na escola, facilitando o processo de organização, de aprendizagem, concentração, além de despertar o prazer em aprender.</p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>ESTRUTURA</h2><br>
+  <h4>Nosso Espaço</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imagens/brinquedoteca3.png" alt="Paris" width="400" height="300">
+        <p><strong>Brinquedoteca</strong></p>
+        <p>Nosso espaço</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imagens/sala.jpg" alt="New York" width="500" height="300">
+        <p><strong>Sala de Aula</strong></p>
+        <p>A sala de aula didatica</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imagens/recreacao.jpg"width="300" height="100">
+        <p><strong>Sala de Recreação</strong></p>
+        <p>Qualquer criança precisa ter a recreação</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>Frases Educativas</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Educar é crescer. E crescer é viver. Educação é, assim, vida no sentido mais autêntico da palavra."<br><span>Anisio Teixeira</span></h4>
+      </div>
+      <div class="item">
+        <h4>"A melhor maneira de tornar as crianças boas, é torná-las felizes."<br><span>Oscar Wilde</span></h4>
+      </div>
+      <div class="item">
+        <h4>"O futuro pertence aqueles que acreditam na beleza dos seus sonhos"<br><span>Eleanor Roosevelt</span></h4>
+      </div> 
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>INVESTIMENTOS</h2>
+    <h4>Atividades disponíveis</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          
+          <h1>Dever de Casa</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong></strong> APOIO PEDAGÓGICO</p>
+          <p>+</p>
+          <p><strong></strong> BRINQUEDOTECA</p>
+          
+        </div>
+        <div class="panel-footer">
+          <h4>Crianças de 1 a 5 anos</h4>
+          <h4>Segunda a Quinta - 1h30min de Aula</h4>
+          <button class="btn btn-lg">
+            <a href="#contact">INFORMAÇÕES AQUI</a>
+          </button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          
+          <h1>Leitura / Matematica</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong></strong>OFICINAS</p>
+          <p>+</p>
+          <p><strong></strong> BRINQUEDOTECA</p>
+          
+        </div>
+        <div class="panel-footer">
+          <h4>Crianças de 1 a 5 anos</h4>
+          <h4>2X na Semana  - 1h00min de Aula</h4>
+          <button class="btn btn-lg">
+            <a href="#contact">INFORMAÇÕES AQUI</a>
+          </button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Todas as Atividades</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong></strong> APOIO PEDAGÓGICO / OFICINAS</p>
+          <p>+</p>
+          <p><strong></strong> BRINQUEDOTECA</p>
+        </div>
+        <div class="panel-footer">
+         <h4>Crianças de 1 a 5 anos</h4>
+          <h4>Solicite os dias e horários</h4>
+          <button class="btn btn-lg">
+            <a href="#contact">INFORMAÇÕES AQUI</a>
+          </button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTATO</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Entre em contato conosco.</p>
+      
+      <p>
+        <span class="glyphicon glyphicon-map-marker"></span> Trav. Dr Eneas Pinheiro 1319 - Marco - Belém, PA</p>
+      
+      <p>
+        <span class="glyphicon glyphicon-phone"></span>
+        Clique para enviar uma mensagem   
+        <button>
+          <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5591985426005">
+          Nosso WhatsApp</a>
+        </button>
+      </p>  
+      </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> tempodacrianca@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      
+        <div class="col-sm-8">
+      <p>
+        <img src="imagens/contato.png" width="500" height="500">
+      </p>
+        
+        
+      </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<h2 align="CENTER"> NOSSA LOCALIZAÇÃO</h2>
+
+<div align="center">
+  <img src="imagens/local2.jpg"  width="100%" height="100%">
+  
+
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  
+  <p>Todos os Direitos Reservados - Copyright 2020</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
